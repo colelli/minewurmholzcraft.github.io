@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MINEWURMHOLZCRAFT | The Game</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body class="test">
-    <script src="index.js"></script>
-    <div>
-        PROVA
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minecraft Playground Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="overflow-hidden bg-minecraft min-h-screen flex flex-col items-center justify-start font-minecraft">
+
+  <!-- Title -->
+  <header class="mt-10 text-5xl md:text-6xl text-green-400 text-shadow-lg drop-shadow-lg text-center">
+    Minecraft Playground Login
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-1 w-full flex items-center justify-center relative px-4">
+    <canvas id="fireworksCanvas" class="absolute inset-0 pointer-events-none z-0"></canvas>
+
+    <div id="loginBox" class="z-10 w-full max-w-xl bg-black/80 border-4 border-green-400 rounded-3xl p-10 md:p-12 shadow-2xl text-center space-y-6">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+        <input type="text" id="username" placeholder="Username"
+               class="w-full md:w-1/2 px-4 py-3 text-lg bg-gray-900 text-green-400 border-2 border-green-400 rounded-xl font-minecraft text-center focus:outline-none" />
+        <input type="password" id="password" placeholder="Password"
+               class="w-full md:w-1/2 px-4 py-3 text-lg bg-gray-900 text-green-400 border-2 border-green-400 rounded-xl font-minecraft text-center focus:outline-none" />
+      </div>
+      <button onclick="handleLogin()"
+              class="w-full md:w-auto px-6 py-4 bg-green-500 hover:bg-green-400 active:scale-95 text-white text-xl rounded-2xl font-bold font-minecraft shadow-md transition duration-200 ease-in-out">
+        Login
+      </button>
     </div>
-  </body>
+  </main>
+
+  <!-- JS code for fireworks and login logic -->
+  <script src="script.js"></script>
+</body>
 </html>

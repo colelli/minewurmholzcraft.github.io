@@ -1,3 +1,18 @@
-.test {
-    background-image: url("./assets/bg_img.png");
+@font-face {
+  font-family: 'Minecraftia';
+  src: url('Minecraftia.ttf') format('truetype');
+}
+
+.font-minecraft {
+  font-family: 'Minecraftia', sans-serif;
+}
+
+.text-shadow-lg {
+  text-shadow: 3px 3px 0 #000;
+}
+
+.bg-minecraft {
+  background-image: url('./assets/bg_img.png');
+  background-size: cover;
+  background-position: center;
 }
