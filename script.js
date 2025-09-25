@@ -121,7 +121,7 @@ function handleLogin() {
   const loginBox = document.getElementById('loginBox');
 
   if (!username) {
-    alert("Please enter a username.");
+    alert("Bitte geben Sie einen Benutzernamen ein.");
     return;
   }
 
