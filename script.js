@@ -126,8 +126,8 @@ function handleLogin() {
   }
 
   loginBox.innerHTML = `
-    <div class="text-2xl md:text-3xl text-green-300 font-minecraft">
-      Welcome <span class="text-green-400">${username}</span> to the playground!
+    <div class="text-7xl text-shadow-lg text-stone-300">
+      Wilkommen <span class="text-amber-400">${username}</span> bei Minewurmholzcraft!
     </div>
   `;
 

@@ -1,6 +1,8 @@
-@font-face {
-  font-family: 'Minecraftia';
-  src: url('Minecraftia.ttf') format('truetype');
+.pixelify-sans-500 {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font-minecraft {

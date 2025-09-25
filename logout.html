@@ -6,19 +6,29 @@
   <title>Minecraft Logout</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&family=VT323&display=swap" rel="stylesheet">
 </head>
-<body class="bg-minecraft min-h-screen flex flex-col items-center justify-center font-minecraft">
+<body class="text-6xl text-amber-500 pixelify-sans-500 overflow-hidden bg-minecraft min-h-screen flex flex-col items-center justify-center">
 
   <!-- Title -->
-  <h1 class="text-5xl md:text-6xl text-green-400 text-shadow-lg drop-shadow-lg text-center mb-16">
-    Minecraft Playground Logout
-  </h1>
+  <img class="mt-10 drop-shadow-lg" src=".//assets/title.png"/>
 
-  <!-- Logout Button -->
-  <button
-    class="text-white bg-red-500 hover:bg-red-400 active:scale-95 text-3xl md:text-4xl px-10 py-6 rounded-2xl font-minecraft shadow-xl transition duration-200 ease-in-out">
-    Logout
-  </button>
+  <!-- Main Container -->
+  <main class="flex-1 w-full flex items-center justify-center relative px-4 text-stone-300">
+    <div id="logoutBox" class="z-10 w-1/2 md:w-5/6 bg-black/60 border-4 border-green-400 rounded-3xl p-10 md:p-12 shadow-2xl text-center space-y-20">
+      <h1 class="text-shadow-lg drop-shadow-lg text-center">
+        Bis zum nächsten Mal
+      </h1>
+
+      <!-- Logout Button -->
+      <button
+        class="text-white bg-red-500 hover:bg-red-400 active:scale-95 px-10 py-6 rounded-2xl shadow-xl transition duration-200 ease-in-out">
+        Ausloggen
+      </button>
+    </div>
+  </main>
 
 </body>
 </html>
